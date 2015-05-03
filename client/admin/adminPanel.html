@@ -1,0 +1,21 @@
+<template name="adminPanel">
+
+	<h1>Bienvenido al admin Panel</h1>	
+	<a href="{{pathFor 'newEvent'}}" class="btn btn-primary">Nuevo Evento</a>
+	<br>
+	
+
+		<div class="row">		
+			{{#each events}}
+			<ul>
+				<li>{{title}}</li>				
+			</ul>			
+			{{/each}}
+		</div>
+
+	
+
+
+
+
+</template>
