@@ -1,6 +1,6 @@
 <template name="newEvent">
 	<h2>Nuevo Evento</h2>
-	<a href="{{pathFor 'adminPanel'}}" class="btn btn-primary">Volver al panel de administrador</a>
+	{{> back}}
 	<div class="container">
 	{{> quickForm collection="Events" id="insertEventsForm" type="insert"}}		
 	</div>

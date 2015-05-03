@@ -5,13 +5,24 @@
 	<br>
 	
 
-		<div class="row">		
-			{{#each events}}
-			<ul>
-				<li>{{title}}</li>				
-			</ul>			
-			{{/each}}
-		</div>
+	<div class="row">		
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>Nombre del evento</th>
+					<th>Editar</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each events}}
+				<tr>
+					<td>{{title}}</td>
+					<td><a href="{{pathFor 'editEvent' _id=this._id}}">Editar</a></td>
+				</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</div>
 
 	
 
