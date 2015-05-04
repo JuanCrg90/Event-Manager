@@ -5,13 +5,17 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-6">
-			<img src="{{image}}" alt="">
+		<div class="col-md-4">
+			<img class="img-responsive" src="{{image}}" alt="">
+			<br>
+			<a class="btn btn-primary" href="{{pathFor 'home'}}">Volver</a>
 		</div>
-		<div class="col-md-6">
+		<div class="col-md-8">
+			<h4>Descripción</h4>
 			{{description}}
 			<div class="row">
 				<div class="col-md-12">
+					<h4>Categorias</h4>
 					{{#each categories}}
 					<ul>
 						<li>{{this}}</li>
@@ -21,14 +25,15 @@
 					
 				</div>
 				<div class="col-md-12">
+					<h4>Fecha</h4>
 					{{date}}
 				</div>
 				<div class="col-md-12">
+					<h4>Compartir</h4>
 					{{> shareit shareData}}
 				</div>
 			</div>
-		</div>
-		
+		</div>		
 	</div>
 
 	

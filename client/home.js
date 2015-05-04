@@ -6,25 +6,25 @@ Template.home.helpers({
 
 Template.home.events({
 	'click #todas': function () {
-		Session.set('category', {});		
+		Session.set('category', {published:true});
 	},
 	'click #desarrolloWeb': function () {
-		Session.set('category', {categories: 'Desarrollo Web'});		
+		Session.set('category', {categories: 'Desarrollo Web',published:true});		
 	},
 	'click #growthHack': function () {
-		Session.set('category', {categories: 'Growth Hack'});		
+		Session.set('category', {categories: 'Growth Hack',published:true});		
 	},
 	'click #lifeHack': function () {
-		Session.set('category', {categories: 'Life Hack'});		
+		Session.set('category', {categories: 'Life Hack',published:true});		
 	},
 	'click #desarrolloMovil': function () {
-		Session.set('category', {categories: 'Desarrollo Movil'});		
+		Session.set('category', {categories: 'Desarrollo Movil',published:true});		
 	},
 	'click #devops': function () {
-		Session.set('category', {categories: 'Devops'});		
+		Session.set('category', {categories: 'Devops',published:true});		
 	},
 	'click #dataScience': function () {
-		Session.set('category', {categories: 'Data Science'});		
+		Session.set('category', {categories: 'Data Science',published:true});		
 	}
 
 });
