@@ -1,7 +1,7 @@
 <template name="layout">
 	{{> loginButtons}}
 	{{#if isInRole 'admin'}}
-	<a href="pathFor 'adminPanel'">Panel de administrador</a>
+	<a href="{{pathFor 'adminPanel'}}">Panel de administrador</a>
 	{{/if}}
 
 

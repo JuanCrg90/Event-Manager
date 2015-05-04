@@ -1,0 +1,35 @@
+<template name="showEvent">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>{{title}}</h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<img src="{{image}}" alt="">
+		</div>
+		<div class="col-md-6">
+			{{description}}
+			<div class="row">
+				<div class="col-md-12">
+					{{#each categories}}
+					<ul>
+						<li>{{this}}</li>
+					</ul>
+					
+					{{/each}}
+					
+				</div>
+				<div class="col-md-12">
+					{{date}}
+				</div>
+				<div class="col-md-12">
+					{{> shareit shareData}}
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	
+</template>

@@ -1,3 +1,12 @@
 <template name="home">
 	<h1>Bienvenidos al Home</h1>
+
+	{{> navBar}}
+
+	<div class="row">
+		{{#each events}}
+		{{> event}}
+		{{/each}}
+		
+	</div>
 </template>
